@@ -1,0 +1,22 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+  <ActionBar title="Sellekna Payment" class="bg-blue-600 text-white" />
+  
+  <StackLayout class="p-4">
+    <Button text="Scan QR Code" 
+            tap="{{ onScanQRCode }}" 
+            class="bg-blue-500 text-white font-bold py-4 rounded-lg mb-4" />
+            
+    <ActivityIndicator busy="{{ isProcessing }}" 
+                      visibility="{{ isProcessing ? 'visible' : 'collapsed' }}" />
+                      
+    <Label text="{{ errorMessage }}" 
+           class="text-red-500 text-center" 
+           visibility="{{ errorMessage ? 'visible' : 'collapsed' }}" 
+           textWrap="true" />
+           
+    <Label text="{{ successMessage }}" 
+           class="text-green-500 text-center" 
+           visibility="{{ successMessage ? 'visible' : 'collapsed' }}" 
+           textWrap="true" />
+  </StackLayout>
+</Page>

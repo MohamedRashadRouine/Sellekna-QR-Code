@@ -1,0 +1,25 @@
+{
+  "name": "sellekna-mobile",
+  "main": "app/app.ts",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@nativescript/camera": "^5.0.12",
+    "@nativescript/core": "~8.8.0",
+    "nativescript-barcodescanner": "^4.1.1"
+  },
+  "devDependencies": {
+    "@nativescript/android": "8.8.0",
+    "@nativescript/ios": "8.8.0",
+    "@nativescript/preview-cli": "^1.0.14",
+    "@nativescript/stackblitz": "0.0.8",
+    "@nativescript/types-minimal": "~8.8.0",
+    "@nativescript/webpack": "~5.0.0",
+    "typescript": "~5.4.0"
+  },
+  "scripts": {
+    "clean": "ns clean",
+    "setup": "setup-nativescript-stackblitz",
+    "preview": "ns clean && setup-nativescript-stackblitz && ns preview"
+  }
+}
